@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Wednesday_Personal_2
 {
-    public delegate void SampleDelegate();
+    public delegate void SampleDelegate(); // create delegate
     class Program
     {
         static void Main(string[] args)
         {
-            SampleDelegate del = new SampleDelegate(SampleMethod1);
-            del();
+            SampleDelegate del = new SampleDelegate(SampleMethod1); //create instance of delegate // pass method to delegate
+            del(); // invoke delegate
 
         }
 
